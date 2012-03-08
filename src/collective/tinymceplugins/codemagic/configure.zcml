@@ -1,0 +1,21 @@
+<configure
+      xmlns="http://namespaces.zope.org/zope"
+      xmlns:five="http://namespaces.zope.org/five"
+      xmlns:browser="http://namespaces.zope.org/browser"
+      xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+      i18n_domain="collective.tinymceplugins.codemagic">
+
+    <browser:resourceDirectory
+          name="collective.tinymceplugins.codemagic"
+          directory="plugin"
+          />
+
+    <genericsetup:registerProfile
+          name="default"
+          title="collective.tinymceplugins.codemagic"
+          directory="profiles/default"
+          description="Installs the collective.tinymceplugins.codemagic package"
+          provides="Products.GenericSetup.interfaces.EXTENSION"
+          />
+
+</configure>
